@@ -1,0 +1,103 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.clock h1{
+    font-size: 5rem;
+}
+.nameInput {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    text-align: center;
+
+}
+.nameInput::placeholder, .toDoForm input::placeholder {
+    color: white;
+}
+.nameInput:focus, .toDoForm input:focus {
+    outline: none;
+    border-color: rgb(127, 193, 255);
+}
+
+.toDoForm input {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 30px;
+    text-align: center;
+}
+
+.toDoList {
+    margin-top: 5px;
+}
+.toDoList li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.weather {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+body {
+    color: white;
+    background-color: #2c3e50;
+}
+
+.form, .greetings {
+    display: none;
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+@media (max-width:768px) {
+    .bgImage {
+        width: auto;
+    }
+    .clock h1{
+        font-size: 4rem;
+    }
+}
