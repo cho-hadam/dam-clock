@@ -1,3 +1,3 @@
 # dam-clock
-Nomad Corders Vanilla JS   
+Nomad Coders Vanilla JS   
 https://cho-hadam.github.io/paint-js/
